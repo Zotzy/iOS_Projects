@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRO-HU-dlA">
+                                <rect key="frame" x="0.0" y="203" width="600" height="162"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="rhs-9P-LDP">
+                                <rect key="frame" x="0.0" y="203" width="600" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="479418657.91856903">
+                                    <!--2016-03-11 19:50:57 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElA-bB-fep">
+                                <rect key="frame" x="279" y="414" width="43" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Pfo-Rv-TYE"/>
+                                </constraints>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartStopButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="swG-D5-8y0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5X-rh-rFw">
+                                <rect key="frame" x="270" y="460" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="uUD-J3-dS9"/>
+                                </constraints>
+                                <state key="normal" title="Pause">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="PauseTimer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ua4-MM-7Je"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GRO-HU-dlA" firstAttribute="leading" secondItem="rhs-9P-LDP" secondAttribute="leading" id="0cb-Zs-fyG"/>
+                            <constraint firstItem="GRO-HU-dlA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="2jQ-0C-uNL"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="D5X-rh-rFw" secondAttribute="bottom" constant="110" id="3Ld-PL-Bbu"/>
+                            <constraint firstItem="D5X-rh-rFw" firstAttribute="centerX" secondItem="ElA-bB-fep" secondAttribute="centerX" id="B4H-nK-a3M"/>
+                            <constraint firstItem="rhs-9P-LDP" firstAttribute="trailing" secondItem="GRO-HU-dlA" secondAttribute="trailing" id="cLd-BB-a7z"/>
+                            <constraint firstItem="D5X-rh-rFw" firstAttribute="top" secondItem="ElA-bB-fep" secondAttribute="bottom" constant="16" id="eaA-VY-Lze"/>
+                            <constraint firstItem="ElA-bB-fep" firstAttribute="top" secondItem="GRO-HU-dlA" secondAttribute="bottom" constant="49" id="fiY-b5-OyZ"/>
+                            <constraint firstItem="GRO-HU-dlA" firstAttribute="bottom" secondItem="rhs-9P-LDP" secondAttribute="bottom" id="kgD-FZ-aQr"/>
+                            <constraint firstItem="rhs-9P-LDP" firstAttribute="centerX" secondItem="ElA-bB-fep" secondAttribute="centerX" id="l2N-FR-g1M"/>
+                            <constraint firstItem="rhs-9P-LDP" firstAttribute="top" secondItem="GRO-HU-dlA" secondAttribute="top" id="yx6-eU-YxN"/>
+                            <constraint firstAttribute="trailing" secondItem="rhs-9P-LDP" secondAttribute="trailing" id="zsq-KC-seG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="rhs-9P-LDP" id="agD-Of-KzF"/>
+                        <outlet property="pauseButton" destination="D5X-rh-rFw" id="6x1-V9-duC"/>
+                        <outlet property="startStopButton" destination="ElA-bB-fep" id="QM1-Qg-3Vl"/>
+                        <outlet property="timeLabel" destination="GRO-HU-dlA" id="bzv-eY-UsJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

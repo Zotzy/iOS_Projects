@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8270004B1C93550300F59F0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8270004A1C93550300F59F0B /* main.m */; };
+		8270004E1C93550300F59F0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8270004D1C93550300F59F0B /* AppDelegate.m */; };
+		827000511C93550300F59F0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 827000501C93550300F59F0B /* ViewController.m */; };
+		827000541C93550300F59F0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 827000521C93550300F59F0B /* Main.storyboard */; };
+		827000561C93550300F59F0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 827000551C93550300F59F0B /* Images.xcassets */; };
+		827000591C93550300F59F0B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827000571C93550300F59F0B /* LaunchScreen.xib */; };
+		827000651C93550300F59F0B /* PushNotifTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 827000641C93550300F59F0B /* PushNotifTimerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8270005F1C93550300F59F0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8270003D1C93550300F59F0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 827000441C93550300F59F0B;
+			remoteInfo = PushNotifTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		827000451C93550300F59F0B /* PushNotifTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushNotifTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		827000491C93550300F59F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8270004A1C93550300F59F0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8270004C1C93550300F59F0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8270004D1C93550300F59F0B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8270004F1C93550300F59F0B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		827000501C93550300F59F0B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		827000531C93550300F59F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		827000551C93550300F59F0B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		827000581C93550300F59F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8270005E1C93550300F59F0B /* PushNotifTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushNotifTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		827000631C93550300F59F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		827000641C93550300F59F0B /* PushNotifTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PushNotifTimerTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		8270006E1C9389AA00F59F0B /* PushNotifTimer.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = PushNotifTimer.mobileprovision; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		827000421C93550300F59F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8270005B1C93550300F59F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8270003C1C93550300F59F0B = {
+			isa = PBXGroup;
+			children = (
+				827000471C93550300F59F0B /* PushNotifTimer */,
+				827000611C93550300F59F0B /* PushNotifTimerTests */,
+				827000461C93550300F59F0B /* Products */,
+				8270006E1C9389AA00F59F0B /* PushNotifTimer.mobileprovision */,
+			);
+			sourceTree = "<group>";
+		};
+		827000461C93550300F59F0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				827000451C93550300F59F0B /* PushNotifTimer.app */,
+				8270005E1C93550300F59F0B /* PushNotifTimerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		827000471C93550300F59F0B /* PushNotifTimer */ = {
+			isa = PBXGroup;
+			children = (
+				8270004C1C93550300F59F0B /* AppDelegate.h */,
+				8270004D1C93550300F59F0B /* AppDelegate.m */,
+				8270004F1C93550300F59F0B /* ViewController.h */,
+				827000501C93550300F59F0B /* ViewController.m */,
+				827000521C93550300F59F0B /* Main.storyboard */,
+				827000551C93550300F59F0B /* Images.xcassets */,
+				827000571C93550300F59F0B /* LaunchScreen.xib */,
+				827000481C93550300F59F0B /* Supporting Files */,
+			);
+			path = PushNotifTimer;
+			sourceTree = "<group>";
+		};
+		827000481C93550300F59F0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				827000491C93550300F59F0B /* Info.plist */,
+				8270004A1C93550300F59F0B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		827000611C93550300F59F0B /* PushNotifTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				827000641C93550300F59F0B /* PushNotifTimerTests.m */,
+				827000621C93550300F59F0B /* Supporting Files */,
+			);
+			path = PushNotifTimerTests;
+			sourceTree = "<group>";
+		};
+		827000621C93550300F59F0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				827000631C93550300F59F0B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		827000441C93550300F59F0B /* PushNotifTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 827000681C93550300F59F0B /* Build configuration list for PBXNativeTarget "PushNotifTimer" */;
+			buildPhases = (
+				827000411C93550300F59F0B /* Sources */,
+				827000421C93550300F59F0B /* Frameworks */,
+				827000431C93550300F59F0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushNotifTimer;
+			productName = PushNotifTimer;
+			productReference = 827000451C93550300F59F0B /* PushNotifTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8270005D1C93550300F59F0B /* PushNotifTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8270006B1C93550300F59F0B /* Build configuration list for PBXNativeTarget "PushNotifTimerTests" */;
+			buildPhases = (
+				8270005A1C93550300F59F0B /* Sources */,
+				8270005B1C93550300F59F0B /* Frameworks */,
+				8270005C1C93550300F59F0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				827000601C93550300F59F0B /* PBXTargetDependency */,
+			);
+			name = PushNotifTimerTests;
+			productName = PushNotifTimerTests;
+			productReference = 8270005E1C93550300F59F0B /* PushNotifTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8270003D1C93550300F59F0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = jeffzotz;
+				TargetAttributes = {
+					827000441C93550300F59F0B = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = N675PJRS8S;
+					};
+					8270005D1C93550300F59F0B = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 827000441C93550300F59F0B;
+					};
+				};
+			};
+			buildConfigurationList = 827000401C93550300F59F0B /* Build configuration list for PBXProject "PushNotifTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8270003C1C93550300F59F0B;
+			productRefGroup = 827000461C93550300F59F0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				827000441C93550300F59F0B /* PushNotifTimer */,
+				8270005D1C93550300F59F0B /* PushNotifTimerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		827000431C93550300F59F0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				827000541C93550300F59F0B /* Main.storyboard in Resources */,
+				827000591C93550300F59F0B /* LaunchScreen.xib in Resources */,
+				827000561C93550300F59F0B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8270005C1C93550300F59F0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		827000411C93550300F59F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				827000511C93550300F59F0B /* ViewController.m in Sources */,
+				8270004E1C93550300F59F0B /* AppDelegate.m in Sources */,
+				8270004B1C93550300F59F0B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8270005A1C93550300F59F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				827000651C93550300F59F0B /* PushNotifTimerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		827000601C93550300F59F0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 827000441C93550300F59F0B /* PushNotifTimer */;
+			targetProxy = 8270005F1C93550300F59F0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		827000521C93550300F59F0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				827000531C93550300F59F0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		827000571C93550300F59F0B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				827000581C93550300F59F0B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		827000661C93550300F59F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		827000671C93550300F59F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		827000691C93550300F59F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PushNotifTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		8270006A1C93550300F59F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PushNotifTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		8270006C1C93550300F59F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PushNotifTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushNotifTimer.app/PushNotifTimer";
+			};
+			name = Debug;
+		};
+		8270006D1C93550300F59F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PushNotifTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushNotifTimer.app/PushNotifTimer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		827000401C93550300F59F0B /* Build configuration list for PBXProject "PushNotifTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				827000661C93550300F59F0B /* Debug */,
+				827000671C93550300F59F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		827000681C93550300F59F0B /* Build configuration list for PBXNativeTarget "PushNotifTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				827000691C93550300F59F0B /* Debug */,
+				8270006A1C93550300F59F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8270006B1C93550300F59F0B /* Build configuration list for PBXNativeTarget "PushNotifTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8270006C1C93550300F59F0B /* Debug */,
+				8270006D1C93550300F59F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8270003D1C93550300F59F0B /* Project object */;
+}
