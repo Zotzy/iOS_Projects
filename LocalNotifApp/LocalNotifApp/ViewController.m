@@ -20,6 +20,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,23 +38,37 @@
 }
 
 
-- (IBAction)cancel:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (IBAction)save:(id)sender {
-}
-
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    [self.itemText resignFirstResponder];
+    [_itemText resignFirstResponder];
     return NO;
 }
 
 - (IBAction)Cancel:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)Save:(id)sender {
+    [self.itemText resignFirstResponder];
+    
+    // Get the current date
+    NSDate *pickerDate = [self.datePicker date];
+    
+    // Schedule the notification
+    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = pickerDate;
+    localNotification.alertBody = self.itemText.text;
+    localNotification.alertAction = @"Show me the item";
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    localNotification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    
+    // Request to reload table view data
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"reloadData" object:self];
+    
+    // Dismiss the view controller
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

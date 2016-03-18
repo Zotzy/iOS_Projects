@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-- (IBAction)Cancel:(id)sender;
 - (IBAction)Save:(id)sender;
+- (IBAction)Cancel:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *itemText;
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 

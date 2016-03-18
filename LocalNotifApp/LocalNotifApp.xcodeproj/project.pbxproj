@@ -202,7 +202,7 @@
 			name = LocalNotifAppTests;
 			productName = LocalNotifAppTests;
 			productReference = 805F3BC21C98A2BE0068F52E /* LocalNotifAppTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -210,8 +210,14 @@
 		805F3B941C98A2BE0068F52E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastTestingUpgradeCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = mobiledev;
+				TargetAttributes = {
+					805F3B9B1C98A2BE0068F52E = {
+						DevelopmentTeam = 2P3RRP947P;
+					};
+				};
 			};
 			buildConfigurationList = 805F3B971C98A2BE0068F52E /* Build configuration list for PBXProject "LocalNotifApp" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -342,6 +348,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -387,10 +394,14 @@
 		805F3BD51C98A2BE0068F52E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalNotifApp/LocalNotifApp-Prefix.pch";
 				INFOPLIST_FILE = "LocalNotifApp/LocalNotifApp-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "jeffzotz.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -398,10 +409,14 @@
 		805F3BD61C98A2BE0068F52E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalNotifApp/LocalNotifApp-Prefix.pch";
 				INFOPLIST_FILE = "LocalNotifApp/LocalNotifApp-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "jeffzotz.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -417,6 +432,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalNotifApp/LocalNotifApp-Prefix.pch";
 				INFOPLIST_FILE = "LocalNotifAppTests/LocalNotifAppTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "jeffzotz.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -434,6 +450,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocalNotifApp/LocalNotifApp-Prefix.pch";
 				INFOPLIST_FILE = "LocalNotifAppTests/LocalNotifAppTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "jeffzotz.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -459,6 +476,7 @@
 				805F3BD61C98A2BE0068F52E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		805F3BD71C98A2BE0068F52E /* Build configuration list for PBXNativeTarget "LocalNotifAppTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +485,7 @@
 				805F3BD91C98A2BE0068F52E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
