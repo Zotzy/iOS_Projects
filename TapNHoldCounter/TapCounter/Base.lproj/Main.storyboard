@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gli-4y-JO6">
+                                <rect key="frame" x="0.0" y="241" width="600" height="117"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="100"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f0B-Up-pzd">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="Title" id="dOT-xp-UOl">
+                                        <barButtonItem key="leftBarButtonItem" title="Reset" style="plain" id="OQA-Oe-voC">
+                                            <connections>
+                                                <action selector="reset:" destination="BYZ-38-t0r" id="8tQ-SC-Y2R"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFT-Rt-Y32">
+                                <rect key="frame" x="237" y="403" width="128" height="42"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Tap or Hold"/>
+                                <connections>
+                                    <action selector="tap:" destination="BYZ-38-t0r" eventType="touchDown" id="6oO-8L-Ad5"/>
+                                    <outletCollection property="gestureRecognizers" destination="ZUh-65-50n" appends="YES" id="afR-KP-VPZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="f0B-Up-pzd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="19M-Nu-dQF"/>
+                            <constraint firstItem="gFT-Rt-Y32" firstAttribute="top" secondItem="Gli-4y-JO6" secondAttribute="bottom" constant="45" id="9pC-2f-TF4"/>
+                            <constraint firstItem="Gli-4y-JO6" firstAttribute="leading" secondItem="f0B-Up-pzd" secondAttribute="leading" id="BTJ-S3-scK"/>
+                            <constraint firstItem="f0B-Up-pzd" firstAttribute="trailing" secondItem="Gli-4y-JO6" secondAttribute="trailing" id="Kua-cq-4tO"/>
+                            <constraint firstItem="gFT-Rt-Y32" firstAttribute="centerX" secondItem="Gli-4y-JO6" secondAttribute="centerX" id="O2f-be-2S6"/>
+                            <constraint firstAttribute="trailing" secondItem="f0B-Up-pzd" secondAttribute="trailing" id="XCI-WI-qGP"/>
+                            <constraint firstItem="f0B-Up-pzd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="abm-RK-bJd"/>
+                            <constraint firstItem="Gli-4y-JO6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pQn-82-Tur"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="Gli-4y-JO6" id="l42-fp-JOl"/>
+                        <outlet property="lpgr" destination="ZUh-65-50n" id="xa6-Ru-Rrx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="ZUh-65-50n"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+</document>

@@ -11,9 +11,11 @@
 @interface ViewController : UIViewController
 
 @property (nonatomic) IBOutlet UILabel *countLabel;
+@property (nonatomic,strong) IBOutlet UILongPressGestureRecognizer *lpgr;
 - (IBAction)reset:(id)sender;
 - (IBAction)tap:(id)sender;
-- (IBAction)hold:(id)sender;
+
+
 
 
 @end
