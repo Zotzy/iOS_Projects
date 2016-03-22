@@ -49,12 +49,14 @@
             //UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Gestures" message:@"Long Gesture Detected" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             //[alertView show];
             // add code to increment count here
+            NSLog(@"long press begin");
             NSInteger val = [_countLabel.text intValue];
             val++;
             _countLabel.text = [@(val) stringValue];
         }
         if (sender.state == UIGestureRecognizerStateRecognized)
         {
+            NSLog(@"recognized long press");
             NSInteger val = [_countLabel.text intValue];
             val++;
             _countLabel.text = [@(val) stringValue];

@@ -499,6 +499,7 @@
 				C07782981C9CCA590044C412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C07782991C9CCA590044C412 /* Build configuration list for PBXNativeTarget "TapCounterTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +508,7 @@
 				C077829B1C9CCA590044C412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C077829C1C9CCA590044C412 /* Build configuration list for PBXNativeTarget "TapCounterUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +517,7 @@
 				C077829E1C9CCA590044C412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

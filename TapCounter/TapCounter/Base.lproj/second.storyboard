@@ -8,7 +8,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -43,6 +42,7 @@
                                 <state key="normal" title="Tap"/>
                                 <connections>
                                     <action selector="tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S3Z-cd-2hV"/>
+                                    <segue destination="SrY-WN-UHo" kind="modal" id="9fI-jt-aQt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,8 +62,17 @@
                         <outlet property="countLabel" destination="Gli-4y-JO6" id="l42-fp-JOl"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+        <!--UIViewController-cLA-Q0-fyQ-->
+        <scene sceneID="4Ho-Kg-lfY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-cLA-Q0-fyQ" id="SrY-WN-UHo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AG3-bJ-V5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="418"/>
         </scene>
     </scenes>
 </document>
