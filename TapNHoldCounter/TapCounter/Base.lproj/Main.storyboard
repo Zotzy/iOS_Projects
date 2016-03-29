@@ -61,12 +61,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Lpgr" destination="ZUh-65-50n" id="E3G-eg-a1a"/>
                         <outlet property="countLabel" destination="Gli-4y-JO6" id="l42-fp-JOl"/>
-                        <outlet property="lpgr" destination="ZUh-65-50n" id="xa6-Ru-Rrx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="ZUh-65-50n"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" numberOfTapsRequired="1" id="ZUh-65-50n"/>
             </objects>
             <point key="canvasLocation" x="305" y="418"/>
         </scene>

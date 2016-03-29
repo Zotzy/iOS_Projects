@@ -18,11 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.lpgr = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPressGestures:)];
-    self.lpgr.minimumPressDuration = 1.0f;
-    self.lpgr.allowableMovement = 100.0f;
+    self.Lpgr = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPressGestures:)];
+    self.Lpgr.minimumPressDuration = 1.0f;
+    self.Lpgr.allowableMovement = 100.0f;
     
-    [self.view addGestureRecognizer:self.lpgr];
+    [self.view addGestureRecognizer:self.Lpgr];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,8 +43,8 @@
 
 - (void)handleLongPressGestures:(UILongPressGestureRecognizer *)sender
 {
-    if ([sender isEqual:self.lpgr]) {
-        if (sender.state == UIGestureRecognizerStateBegan)
+    //if ([sender isEqual:self.Lpgr]) {
+        if ([sender state] == UIGestureRecognizerStateBegan)
         {
             //UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Gestures" message:@"Long Gesture Detected" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             //[alertView show];
@@ -54,14 +54,15 @@
             val++;
             _countLabel.text = [@(val) stringValue];
         }
-        if (sender.state == UIGestureRecognizerStateRecognized)
+        if ([sender state] == UIGestureRecognizerStateChanged)
         {
             NSLog(@"recognized long press");
             NSInteger val = [_countLabel.text intValue];
             val++;
             _countLabel.text = [@(val) stringValue];
+            //[self handleLongPressGestures:sender];
         }
-    }
+    //}
 }
 
 
